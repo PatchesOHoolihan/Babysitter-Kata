@@ -50,7 +50,14 @@ public class Babysitter {
 	}
 
 	public boolean validateBedTime(int bedTime, int startTime, int endTime) {
+		if (convertTime(startTime) <= convertTime(bedTime) && convertTime(bedTime) <= convertTime(endTime)) {
+			return true;
+		} else
+			return false;
+	}
 
-		return true;
+	public int calculateMidnightShiftHours(int endTime) {
+
+		return 4;
 	}
 }

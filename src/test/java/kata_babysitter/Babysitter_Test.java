@@ -80,7 +80,16 @@ public class Babysitter_Test {
 		assertEquals(false, testObject.validateBedTime(6, 7, 11));
 	}
 	
-
+	// Creating a method to calculate amount of hours in the midnight shift.
+	@Test
+	public void shouldReturn4HoursFromMidnightToEndTime4am() {
+		assertEquals(4, testObject.calculateMidnightShiftHours(4));
+	}
+	
+	@Test
+	public void shouldReturn2HoursFromMidnightToEndTime2am() {
+		assertEquals(2, testObject.calculateMidnightShiftHours(2));
+	}
 	
 
 }
