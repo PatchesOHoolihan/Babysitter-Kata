@@ -48,4 +48,9 @@ public class Babysitter {
 			return false;
 
 	}
+
+	public boolean validateBedTime(int bedTime, int startTime, int endTime) {
+
+		return true;
+	}
 }

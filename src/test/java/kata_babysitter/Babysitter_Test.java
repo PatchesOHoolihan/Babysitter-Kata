@@ -69,13 +69,18 @@ public class Babysitter_Test {
 		assertEquals(false, testObject.validateEndTime(7, 8));
 	}
 	
+	// Creating a method to validate that bedtime is within range of start time to end time.
+	@Test
+	public void shouldReturnTrueBedTime9pmIsWithinStartTime5pmEndTime4am() {
+		assertEquals(true, testObject.validateBedTime(9, 5, 4));
+	}
 	
+	@Test
+	public void shouldReturnFalseBedTime6pmIsWithinStartTime7pmEndTime11pm() {
+		assertEquals(false, testObject.validateBedTime(6, 7, 11));
+	}
 	
-//	// Creating a method to validate that end time is after start time.
-//	@Test
-//	public void shouldReturnTrueIfConvertedEndTimeIsGreaterThanConvertedStartTime() {
-//		testObject.validateEnd
-//	}
+
 	
 
 }
