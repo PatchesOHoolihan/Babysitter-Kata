@@ -21,8 +21,17 @@ public class Babysitter {
 	}
 
 	public int convertTime(int inputTime) {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		int convertedTime = 0;
+		
+		if (inputTime <= 12 && inputTime >= 5){
+			convertedTime = inputTime - 5;
+		} else
+			if (inputTime >=1 && inputTime <=4){
+				convertedTime = inputTime + 7;
+			}
+		
+		return convertedTime;
 	}
 
 }

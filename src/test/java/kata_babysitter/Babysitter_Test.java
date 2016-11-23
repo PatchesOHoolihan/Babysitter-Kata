@@ -36,7 +36,7 @@ public class Babysitter_Test {
 		assertEquals(6, testObject.returnBedTime(6));
 	}
 	
-	@Test // Creating methods
+	@Test // Creating a method to convert time to a 0-11 scale.
 	public void shouldConvertTime5to0() {
 	assertEquals(0, testObject.convertTime(5));
 	}
