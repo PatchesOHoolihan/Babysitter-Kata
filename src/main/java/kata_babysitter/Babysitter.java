@@ -21,17 +21,24 @@ public class Babysitter {
 	}
 
 	public int convertTime(int inputTime) {
-		
+
 		int convertedTime = 0;
-		
-		if (inputTime <= 12 && inputTime >= 5){
+
+		if (inputTime <= 12 && inputTime >= 5) {
 			convertedTime = inputTime - 5;
-		} else
-			if (inputTime >=1 && inputTime <=4){
-				convertedTime = inputTime + 7;
-			}
-		
+		} else if (inputTime >= 1 && inputTime <= 4) {
+			convertedTime = inputTime + 7;
+		}
+
 		return convertedTime;
+	}
+
+	public boolean validateStartTime(int startTime) {
+
+		if (convertTime(startTime) < 11) {
+			return true;
+		} else
+			return false;
 	}
 
 }
