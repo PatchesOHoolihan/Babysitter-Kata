@@ -20,4 +20,9 @@ public class Babysitter {
 		return bedTime;
 	}
 
+	public int convertTime(int inputTime) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

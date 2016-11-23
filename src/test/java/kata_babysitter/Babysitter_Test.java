@@ -11,16 +11,14 @@ public class Babysitter_Test {
 	
 	@Before
 	public void executedBeforeEachTest(){
-		//Arrange
+		// Arrange
 		testObject = new Babysitter();
 	}
 	
+	// Creating methods to return times.
 	@Test
 	public void shouldReturnStartTime(){
-		//Act
-		int actual = testObject.returnStartTime(6);
-		//Assert
-		assertEquals(6, actual);
+		assertEquals(6, testObject.returnStartTime(6));
 	}
 	
 	@Test
@@ -38,9 +36,14 @@ public class Babysitter_Test {
 		assertEquals(6, testObject.returnBedTime(6));
 	}
 	
-	@Test
+	@Test // Creating methods
 	public void shouldConvertTime5to0() {
 	assertEquals(0, testObject.convertTime(5));
+	}
+	
+	@Test
+	public void shouldConvertTime4to11() {
+		assertEquals(11, testObject.convertTime(4));
 	}
 	
 
