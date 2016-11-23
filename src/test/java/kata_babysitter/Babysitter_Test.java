@@ -58,6 +58,17 @@ public class Babysitter_Test {
 		assertEquals(false, testObject.validateStartTime(4));
 	}
 	
+	// Creating a method to validate that end time is after start time.
+	@Test
+	public void shouldReturnTrueEndTime4amIsAfterStartTime5pm(){
+		assertEquals(true, testObject.validateEndTime(4, 5));
+	}
+	
+	@Test
+	public void shouldReturnFalseEndTime7pmIsAfterStartTime8pm() {
+		assertEquals(false, testObject.validateEndTime(7, 8));
+	}
+	
 	
 	
 //	// Creating a method to validate that end time is after start time.

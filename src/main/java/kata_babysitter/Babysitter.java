@@ -41,4 +41,11 @@ public class Babysitter {
 			return false;
 	}
 
+	public boolean validateEndTime(int endTime, int startTime) {
+		if (convertTime(endTime) > convertTime(startTime)) {
+			return true;
+		} else
+			return false;
+
+	}
 }
