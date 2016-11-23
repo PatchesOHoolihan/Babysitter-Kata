@@ -7,7 +7,6 @@ public class Babysitter {
 	}
 
 	public int returnStartTime(int startTime) {
-
 		return startTime;
 	}
 

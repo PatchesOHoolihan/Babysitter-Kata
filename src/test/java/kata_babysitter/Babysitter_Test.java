@@ -23,8 +23,14 @@ public class Babysitter_Test {
 		assertEquals(6, actual);
 	}
 	
-	@Test public void shouldReturnStartTimeWithADifferentTime() {
+	@Test
+	public void shouldReturnStartTimeWithADifferentTime() {
 		assertEquals(7, testObject.returnStartTime(7));
+	}
+	
+	@Test
+	public void shouldReturnEndTime() {
+		assertEquals(6, testObject.returnEndTime(6));
 	}
 
 }
