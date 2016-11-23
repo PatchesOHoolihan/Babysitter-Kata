@@ -10,4 +10,9 @@ public class Babysitter {
 		return startTime;
 	}
 
+	public int returnEndTime(int endTime) {
+
+		return endTime;
+	}
+
 }
