@@ -32,5 +32,10 @@ public class Babysitter_Test {
 	public void shouldReturnEndTime() {
 		assertEquals(6, testObject.returnEndTime(6));
 	}
+	
+	@Test
+	public void shouldReturnBedTime() {
+		assertEquals(6, testObject.returnBedTime(6));
+	}
 
 }
