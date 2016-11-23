@@ -1,5 +1,7 @@
 package kata_babysitter;
 
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 public class Babysitter_Test {
@@ -11,7 +13,7 @@ public class Babysitter_Test {
 		Babysitter testObject = new Babysitter();
 		
 		//Act
-		actual = testObject.returnStartTime(6);
+		int actual = testObject.returnStartTime(6);
 		
 		//Assert
 		assertEquals(6, actual);

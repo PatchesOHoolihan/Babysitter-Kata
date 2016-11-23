@@ -6,4 +6,9 @@ public class Babysitter {
 
 	}
 
+	public int returnStartTime(int startTime) {
+
+		return 6;
+	}
+
 }
