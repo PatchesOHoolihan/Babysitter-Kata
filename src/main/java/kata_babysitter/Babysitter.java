@@ -15,4 +15,9 @@ public class Babysitter {
 		return endTime;
 	}
 
+	public int returnBedTime(int bedTime) {
+
+		return bedTime;
+	}
+
 }
