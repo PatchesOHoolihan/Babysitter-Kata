@@ -37,5 +37,11 @@ public class Babysitter_Test {
 	public void shouldReturnBedTime() {
 		assertEquals(6, testObject.returnBedTime(6));
 	}
+	
+	@Test
+	public void shouldConvertTime5to0() {
+	assertEquals(0, testObject.convertTime(5));
+	}
+	
 
 }
