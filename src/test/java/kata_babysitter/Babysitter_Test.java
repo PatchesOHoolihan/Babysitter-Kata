@@ -15,26 +15,23 @@ public class Babysitter_Test {
 		testObject = new Babysitter();
 	}
 
-	// Creating methods to return times.
-	@Test
-	public void shouldReturnStartTime() {
-		assertEquals(6, testObject.returnStartTime(6));
-	}
-
-	@Test
-	public void shouldReturnStartTimeWithADifferentTime() {
-		assertEquals(7, testObject.returnStartTime(7));
-	}
-
-	@Test
-	public void shouldReturnEndTime() {
-		assertEquals(6, testObject.returnEndTime(6));
-	}
-
-	@Test
-	public void shouldReturnBedTime() {
-		assertEquals(6, testObject.returnBedTime(6));
-	}
+	// (Post-completion refactoring)
+	// These tests are deprecated after removing the methods from the class.
+	/*
+	 * // Creating methods to return times.
+	 * 
+	 * @Test public void shouldReturnStartTime() { assertEquals(6,
+	 * testObject.returnStartTime(6)); }
+	 * 
+	 * @Test public void shouldReturnStartTimeWithADifferentTime() {
+	 * assertEquals(7, testObject.returnStartTime(7)); }
+	 * 
+	 * @Test public void shouldReturnEndTime() { assertEquals(6,
+	 * testObject.returnEndTime(6)); }
+	 * 
+	 * @Test public void shouldReturnBedTime() { assertEquals(6,
+	 * testObject.returnBedTime(6)); }
+	 */
 
 	// Creating a method to convert time to a 0-11 scale.
 	@Test
@@ -125,21 +122,21 @@ public class Babysitter_Test {
 	public void shouldReturn7HoursStartTime5pmEndTime4amBedtime4am() {
 		assertEquals(7, testObject.calculateRegularShiftHours(5, 4, 4));
 	}
-	
+
 	@Test
 	public void shouldReturn6HoursStartTime5pmEndTime4amBedtime11pm() {
 		assertEquals(6, testObject.calculateRegularShiftHours(5, 4, 11));
 	}
-	
+
 	// Create method to return total pay.
 	// Pay rates are hardcoded in the class.
 	@Test
-	public void shouldReturn136ForStartTime5pmBedTime9pmEndTime4am(){
+	public void shouldReturn136ForStartTime5pmBedTime9pmEndTime4am() {
 		assertEquals(136, testObject.calculateTotalPay(5, 9, 4));
 	}
-	
+
 	@Test
-	public void shouldReturn124ForStartTime6pmBedTime9pmEndTime4am(){
+	public void shouldReturn124ForStartTime6pmBedTime9pmEndTime4am() {
 		assertEquals(124, testObject.calculateTotalPay(6, 9, 4));
 	}
 
