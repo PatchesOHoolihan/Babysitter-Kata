@@ -62,11 +62,17 @@ I want to calculate my nightly charge
 - A method to calculate the pay for the regular shift.
 - A method to add and return the pay for the total shift.
 
-## Test ideas (not necessarily a complete list)
+## Test ideas
+(This is a "scratchpad" area.)
 - Should return each input type.
 - Should convert inputs to 0-11 scale.
 - Should <?> if end time is before start time.
 - Should <?> if bedtime is before start time.
 - Should <?> if bedtime is after end time.
+- Start time must be before 4am.
+
+
+## The actual tests I implemented
+- 
 
 
