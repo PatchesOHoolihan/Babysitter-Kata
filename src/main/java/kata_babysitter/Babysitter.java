@@ -40,9 +40,11 @@ public class Babysitter {
 			return true;
 		} else
 			return false;
+
 	}
 
 	public boolean validateEndTime(int endTime, int startTime) {
+		
 		if (convertTime(endTime) > convertTime(startTime)) {
 			return true;
 		} else
@@ -51,20 +53,25 @@ public class Babysitter {
 	}
 
 	public boolean validateBedTime(int bedTime, int startTime, int endTime) {
+		
 		if (convertTime(startTime) <= convertTime(bedTime) && convertTime(bedTime) <= convertTime(endTime)) {
 			return true;
 		} else
 			return false;
+
 	}
 
 	public int calculateMidnightShiftHours(int endTime) {
+
 		if (convertTime(endTime) > convertTime(12)) {
 			return convertTime(endTime) - convertTime(12);
 		} else
 			return 0;
+
 	}
 
 	public int calculateBedtimeShiftHours(int startTime, int endTime, int bedTime) {
+
 		if (convertTime(startTime) < convertTime(12)) {
 			return convertTime(12) - convertTime(bedTime);
 		} else
@@ -73,12 +80,14 @@ public class Babysitter {
 	}
 
 	public int calculateRegularShiftHours(int startTime, int endTime, int bedTime) {
+
 		if (convertTime(bedTime) >= convertTime(12)) {
 			return convertTime(12) - convertTime(startTime);
 		} else if (convertTime(bedTime) < convertTime(12)) {
 			return convertTime(bedTime) - convertTime(startTime);
 		} else
 			return 0;
+
 	}
 
 	public int calculateTotalPay(int startTime, int bedTime, int endTime) {
@@ -86,5 +95,7 @@ public class Babysitter {
 		return (calculateRegularShiftHours(startTime, endTime, bedTime) * regularPayRate)
 				+ (calculateBedtimeShiftHours(startTime, endTime, bedTime) * bedtimePayRate)
 				+ (calculateMidnightShiftHours(endTime) * midnightPayRate);
+
 	}
+
 }
