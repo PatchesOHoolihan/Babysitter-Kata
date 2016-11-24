@@ -22,7 +22,7 @@ I want to calculate my nightly charge
 ## Pre-coding notes
 I find that it helps to write down thoughts, ideas, and observations I have about a coding problem or exercise before typing any code. Most of this section was written before I began coding with some parts added or modified during and after the completion of the kata.
 
-- The goal of this exercise is to create a method that will output a single value that is the amount of money paid to a babysitter after the completion of one shift.
+- The goal of this exercise is to create a method that will output a single value that is the amount of money owed to a babysitter after the completion of one shift.
 - The method that we need to create that will output this value will require three inputs: 
 	- The starting time of the babysitter's shift.
 	- The ending time of the babysitter's shift.
@@ -39,7 +39,7 @@ I find that it helps to write down thoughts, ideas, and observations I have abou
 	- The bedtime must not be before the start time.
 	- The bedtime must not be after the end time.
 	- The bedtime *can* be the same as either the start or end time.
-- The inputs are in the form of times of the day and are constrained by the kata to be from 5pm to 4am, excluding partial hours. Therefore there are a total of 12 possible values that can be used as inputs (ignoring the constraints mentioned in the previouse bullet point).
+- The inputs are in the form of times of the day and are constrained by the kata to be from 5pm to 4am, excluding partial hours. Therefore there are a total of 12 possible values that can be used as inputs (ignoring the constraints mentioned in the previouse bullet points).
 - To make the calculations easier, we can make a method to covert the times to integers (e.g. 5pm becomes 0, 4am becomes 11).
 
 ## Basic walkthrough of what our code will do
