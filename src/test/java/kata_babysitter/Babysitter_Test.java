@@ -106,17 +106,17 @@ public class Babysitter_Test {
 	// supersede regular shift hours pay rate.
 	@Test
 	public void shouldReturn6HoursBedTime6pmStartTime5pmEndTime4am() {
-		assertEquals(6, testObject.calculateBedtimeShiftHours(6, 5, 4));
+		assertEquals(6, testObject.calculateBedtimeShiftHours(5, 4, 6));
 	}
 
 	@Test
 	public void shouldReturn1HoursBedTime11pmStartTime5pmEndTime4am() {
-		assertEquals(1, testObject.calculateBedtimeShiftHours(11, 5, 4));
+		assertEquals(1, testObject.calculateBedtimeShiftHours(5, 4, 11));
 	}
 
 	@Test
 	public void shouldReturn0HoursBedtime1amStartTime1amEndTime3am() {
-		assertEquals(0, testObject.calculateBedtimeShiftHours(1, 1, 3));
+		assertEquals(0, testObject.calculateBedtimeShiftHours(1, 3, 1));
 	}
 
 	// Creating a method to calculate the amount of hours in the regular shift.
@@ -132,9 +132,15 @@ public class Babysitter_Test {
 	}
 	
 	// Create method to return total pay.
+	// Pay rates are hardcoded in the class.
 	@Test
 	public void shouldReturn136ForStartTime5pmBedTime9pmEndTime4am(){
 		assertEquals(136, testObject.calculateTotalPay(5, 9, 4));
+	}
+	
+	@Test
+	public void shouldReturn124ForStartTime6pmBedTime9pmEndTime4am(){
+		assertEquals(124, testObject.calculateTotalPay(6, 9, 4));
 	}
 
 }

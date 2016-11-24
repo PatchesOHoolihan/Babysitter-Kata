@@ -1,6 +1,10 @@
 package kata_babysitter;
 
 public class Babysitter {
+	
+	private int regularPayRate = 12;
+	private int bedtimePayRate = 8;
+	private int midnightPayRate = 16;
 
 	public static void main(String[] args) {
 
@@ -65,7 +69,7 @@ public class Babysitter {
 			return 0;
 	}
 
-	public int calculateBedtimeShiftHours(int bedTime, int startTime, int endTime) {
+	public int calculateBedtimeShiftHours(int startTime, int endTime, int bedTime) {
 		if (convertTime(startTime) < convertTime(12)) {
 			int bedtimeShiftHours = 0;
 			bedtimeShiftHours = convertTime(12) - convertTime(bedTime);
@@ -87,6 +91,8 @@ public class Babysitter {
 
 	public int calculateTotalPay(int startTime, int bedTime, int endTime) {
 
-		return 136;
+		return (calculateRegularShiftHours(startTime, endTime, bedTime) * regularPayRate)
+				+ (calculateBedtimeShiftHours(startTime, endTime, bedTime) * bedtimePayRate)
+				+ (calculateMidnightShiftHours(endTime) * midnightPayRate);
 	}
 }
