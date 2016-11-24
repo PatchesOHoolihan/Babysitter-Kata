@@ -52,16 +52,19 @@ I find that it helps to write down thoughts, ideas, and observations I have abou
 	3. Regular shift.
 - It will multiply each sub-shift by its pay rate then add those sub-totals and return the total pay amount.
 
-## Methods needed (not necessarily a complete list)
+## Methods used
+Some of this was typed before coding and some after.
+
 - A method to convert the input from times without am/pm (i.e. 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4) to a 12-integer scale.
 	- Interestingly, since the only purpose of this method is to help calculate the difference between two values, any continuous sequence of 12 integers could be used, but we'll keep it simple and use 0-11.
 - A method to validate the inputs.
-	- To check start time against end time.
-	- To check bed time against both start time and end time.
+	- To validate the start time.
+	- To validate the end time.
+	- To validate the bedtime.
 - A method to calculate the amount of hours in the midnight shift.
 - A method to calculate the amount of hours in the bedtime shift.
 - A method to calculate the amount of hours in the regular shift.
-- ~~A method to calculate the pay for the midnight shift.~~
+- ~~A method to calculate the pay for the midnight shift.~~ (I did not end up using separate methods for these in order to complete the kata.)
 - ~~A method to calculate the pay for the bedtime shift.~~
 - ~~A method to calculate the pay for the regular shift.~~
 - A method to calculate the pay for the sub-shifts and return the pay for the total shift.
