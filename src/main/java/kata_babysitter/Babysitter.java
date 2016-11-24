@@ -74,4 +74,9 @@ public class Babysitter {
 			return 0;
 
 	}
+
+	public int calculateRegularShiftHours(int startTime, int endTime, int bedTime) {
+		int regularShiftHours = convertTime(bedTime) - convertTime(startTime);
+		return regularShiftHours;
+	}
 }

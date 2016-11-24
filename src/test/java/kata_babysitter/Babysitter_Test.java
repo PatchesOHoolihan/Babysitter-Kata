@@ -101,8 +101,9 @@ public class Babysitter_Test {
 	}
 
 	// Creating a method to calculate amount of hours in the bedtime shift.
-	// Midnight shift hours supersede bedtime shift hours which in turn
-	// supersede regular shift hours.
+	// Midnight shift hours' pay rate supersede bedtime shift hours pay rate
+	// which in turn
+	// supersede regular shift hours pay rate.
 	@Test
 	public void shouldReturn6HoursBedTime6pmStartTime5pmEndTime4am() {
 		assertEquals(6, testObject.calculateBedtimeShiftHours(6, 5, 4));
@@ -116,6 +117,18 @@ public class Babysitter_Test {
 	@Test
 	public void shouldReturn0HoursBedtime1amStartTime1amEndTime3am() {
 		assertEquals(0, testObject.calculateBedtimeShiftHours(1, 1, 3));
+	}
+
+	// Creating a method to calculate the amount of hours in the regular shift.
+	// Pay rate of regular shift is superseded by the other two types of shifts.
+	@Test
+	public void shouldReturn7HoursStartTime5pmEndTime4amBedtime4am() {
+		assertEquals(7, testObject.calculateRegularShiftHours(5, 4, 4));
+	}
+	
+	@Test
+	public void shouldReturn6HoursStartTime5pmEndTime4amBedtime11pm() {
+		assertEquals(6, testObject.calculateRegularShiftHours(5, 4, 11));
 	}
 
 }
