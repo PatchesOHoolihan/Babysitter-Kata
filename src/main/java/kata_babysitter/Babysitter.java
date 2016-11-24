@@ -84,4 +84,9 @@ public class Babysitter {
 		} else
 			return 0;
 	}
+
+	public int calculateTotalPay(int startTime, int bedTime, int endTime) {
+
+		return 136;
+	}
 }

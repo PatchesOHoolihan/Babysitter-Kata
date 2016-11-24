@@ -130,5 +130,11 @@ public class Babysitter_Test {
 	public void shouldReturn6HoursStartTime5pmEndTime4amBedtime11pm() {
 		assertEquals(6, testObject.calculateRegularShiftHours(5, 4, 11));
 	}
+	
+	// Create method to return total pay.
+	@Test
+	public void shouldReturn136ForStartTime5pmBedTime9pmEndTime4am(){
+		assertEquals(136, testObject.calculateTotalPay(5, 9, 4));
+	}
 
 }
