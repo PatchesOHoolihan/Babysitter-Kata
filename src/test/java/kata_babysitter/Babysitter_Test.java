@@ -15,8 +15,8 @@ public class Babysitter_Test {
 		testObject = new Babysitter();
 	}
 
-	// (Post-completion refactoring)
-	// These tests are deprecated after removing the methods from the class.
+	// These tests are deprecated after removing the methods from the class
+	// during refactoring.
 	/*
 	 * // Creating methods to return times.
 	 * 
@@ -98,9 +98,8 @@ public class Babysitter_Test {
 	}
 
 	// Creating a method to calculate amount of hours in the bedtime shift.
-	// Midnight shift hours' pay rate supersede bedtime shift hours pay rate
-	// which in turn
-	// supersede regular shift hours pay rate.
+	// Midnight shift hours pay rate supersedes bedtime shift hours pay rate
+	// which in turn supersedes regular shift hours pay rate.
 	@Test
 	public void shouldReturn6HoursBedTime6pmStartTime5pmEndTime4am() {
 		assertEquals(6, testObject.calculateBedtimeShiftHours(5, 4, 6));
@@ -117,7 +116,6 @@ public class Babysitter_Test {
 	}
 
 	// Creating a method to calculate the amount of hours in the regular shift.
-	// Pay rate of regular shift is superseded by the other two types of shifts.
 	@Test
 	public void shouldReturn7HoursStartTime5pmEndTime4amBedtime4am() {
 		assertEquals(7, testObject.calculateRegularShiftHours(5, 4, 4));
