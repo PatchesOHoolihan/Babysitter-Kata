@@ -10,21 +10,6 @@ public class Babysitter {
 
 	}
 
-	// Methods to simply return the input times are not needed for completion of
-	// the kata and have been commented out here and in the test class during
-	// refactoring.
-	/*
-	 * public int returnStartTime(int startTime) { return startTime; }
-	 * 
-	 * public int returnEndTime(int endTime) {
-	 * 
-	 * return endTime; }
-	 * 
-	 * public int returnBedTime(int bedTime) {
-	 * 
-	 * return bedTime; }
-	 */
-
 	public int convertTime(int inputTime) {
 
 		if (inputTime <= 12 && inputTime >= 5) {

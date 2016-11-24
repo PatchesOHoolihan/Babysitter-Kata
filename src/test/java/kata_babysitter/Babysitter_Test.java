@@ -11,27 +11,8 @@ public class Babysitter_Test {
 
 	@Before
 	public void executedBeforeEachTest() {
-		// Arrange
 		testObject = new Babysitter();
 	}
-
-	// These tests are deprecated after removing the methods from the class
-	// during refactoring.
-	/*
-	 * // Creating methods to return times.
-	 * 
-	 * @Test public void shouldReturnStartTime() { assertEquals(6,
-	 * testObject.returnStartTime(6)); }
-	 * 
-	 * @Test public void shouldReturnStartTimeWithADifferentTime() {
-	 * assertEquals(7, testObject.returnStartTime(7)); }
-	 * 
-	 * @Test public void shouldReturnEndTime() { assertEquals(6,
-	 * testObject.returnEndTime(6)); }
-	 * 
-	 * @Test public void shouldReturnBedTime() { assertEquals(6,
-	 * testObject.returnBedTime(6)); }
-	 */
 
 	// Creating a method to convert time to a 0-11 scale.
 	@Test

@@ -64,7 +64,4 @@ Some of this was typed before coding and some after.
 - A method to calculate the amount of hours in the midnight shift.
 - A method to calculate the amount of hours in the bedtime shift.
 - A method to calculate the amount of hours in the regular shift.
-- ~~A method to calculate the pay for the midnight shift.~~ (I did not end up using separate methods for these in order to complete the kata.)
-- ~~A method to calculate the pay for the bedtime shift.~~
-- ~~A method to calculate the pay for the regular shift.~~
 - A method to calculate the pay for the sub-shifts and return the pay for the total shift.
