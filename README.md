@@ -42,7 +42,7 @@ I find that it helps to write down thoughts, ideas, and observations I have abou
 - The inputs are in the form of times of the day and are constrained by the kata to be from 5pm to 4am, excluding partial hours. Therefore there are a total of 12 possible values that can be used as inputs (ignoring the constraints mentioned in the previouse bullet points).
 - To make the calculations easier, we can make a method to covert the times to integers (e.g. 5pm becomes 0, 4am becomes 11).
 
-## Basic walkthrough of what our code will do
+## Basic walkthrough of what our solution will do
 - It will take three inputs: the start time, end time, and bedtime.
 - It will convert them to the 0-11 integer scale.
 - It will validate the converted inputs to check whether they violate constraints (i.e. it will check that the inputs "make sense" with respect to one another).
