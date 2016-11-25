@@ -41,7 +41,10 @@ I want to calculate my nightly charge
 - To make the calculations easier, we can make a method to covert the times to integers (e.g. 5pm becomes 0, 4am becomes 11).
 
 ## Basic walkthrough of what our solution will do
-- It will take three inputs: the start time, end time, and bedtime.
+- It will take three inputs:
+	1. The start time.
+	2. The end time.
+	3. The bedtime.
 - It will convert them to the 0-11 integer scale.
 - It will validate the converted inputs to check whether they violate constraints (i.e. it will check that the inputs "make sense" with respect to one another).
 - It will used the converted inputs to calculate the amount of hours worked during each sub-shift in order of precedence of the pay rates:
