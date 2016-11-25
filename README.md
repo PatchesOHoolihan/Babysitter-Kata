@@ -22,11 +22,11 @@ I want to calculate my nightly charge
 ## Pre-coding notes
 I find that it helps to write down thoughts, ideas, and observations I have about a coding problem or exercise before typing any code. Most of this section was written before I began coding with some parts added or modified during and after the completion of the kata.
 
-- The goal of this exercise is to create a method that will output a single value that is the amount of money owed to a babysitter after the completion of one shift.
+- The goal of this exercise is **to create a method that will output a single value** that is the amount of money owed to a babysitter after the completion of one shift.
 - The method that we need to create that will output this value will require three inputs: 
-	- The starting time of the babysitter's shift.
-	- The ending time of the babysitter's shift.
-	- The bedtime.
+	- The **starting time** of the babysitter's shift.
+	- The **ending time** of the babysitter's shift.
+	- The **bedtime**.
 - There are three different rates at which the babysitter can be paid, and thus we need to break down the problem by finding how many hours are worked under each pay rate. (This is the "real" challenge of the exercise; calculating the amount to be paid is a simple arithmetic problem of multiplication and addition once we have calculated the amount of individual sub-shift hours.)
 - We can see that any hour worked after midnight has a pay rate that supersedes all other pay rates. We'll call these hours the "midnight shift".
 	- Note here that even though the bedtime can be set after midnight, there won't be any hours paid at the bedtime rate because they will be superseded by the midnight shift rate. The same is true regarding the start time.
