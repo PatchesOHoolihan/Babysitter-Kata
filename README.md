@@ -20,8 +20,6 @@ In order to get paid for 1 night of work
 I want to calculate my nightly charge
 
 ## Pre-coding notes
-I find that it helps to write down thoughts, ideas, and observations I have about a coding problem or exercise before typing any code. Most of this section was written before I began coding with some parts added or modified during and after the completion of the kata.
-
 - The goal of this exercise is **to create a method that will output a single value** that is the amount of money owed to a babysitter after the completion of one shift.
 - The method that we need to create that will output this value will require three inputs: 
 	- The **starting time** of the babysitter's shift.
@@ -52,6 +50,7 @@ I find that it helps to write down thoughts, ideas, and observations I have abou
 	3. Regular shift.
 - It will multiply each sub-shift by its pay rate then add those sub-totals and return the total pay amount.
 
+<!--
 ## Methods used
 Some of this was typed before coding and some after.
 
@@ -65,3 +64,4 @@ Some of this was typed before coding and some after.
 - A method to calculate the amount of hours in the bedtime shift.
 - A method to calculate the amount of hours in the regular shift.
 - A method to calculate the pay for the sub-shifts and return the pay for the total shift.
+-->
