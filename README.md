@@ -2,7 +2,7 @@
 **[Description of how to download/clone and run the code will go here.]**
 
 ## Description of kata
-Taken from https://gist.github.com/jameskbride/5482722 :
+Taken from https://gist.github.com/jameskbride/5482722. (Preservation fork here: https://gist.github.com/jduffey/dd68b22689713ab575d57b2119949f8c)
 
 This kata simulates a babysitter working and getting paid for one night.  The rules are pretty straight forward:
 
